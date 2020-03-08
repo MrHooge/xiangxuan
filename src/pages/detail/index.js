@@ -6,7 +6,7 @@ import "taro-ui/dist/style/components/tab-bar.scss"
 import "taro-ui/dist/style/components/badge.scss"
 import './detail.scss'
 import product from '../../assets/images/product8.png'
-import RecomdItems from '../goods/index'
+import RecomdItems from '../choose_clothes/hot_products/HotProducts'
 import Likes from '../../assets/images/likes.png'
 import Yichu from '../../assets/images/yichu.png'
 
@@ -47,12 +47,12 @@ export default class Detail extends Component {
   render() {
     return (
       <View>
-        <AtNavBar
+        {/* <AtNavBar
           color='#000'
           title='商品详情页'
           leftIconType='chevron-left'
           onClickLeftIcon={this.backClick.bind(this, '返回')}
-        />
+        /> */}
         <View className='detail-body'>
           <View className='detail-swiper'>
             <Swiper
@@ -95,19 +95,22 @@ export default class Detail extends Component {
         <View className='recommend'>
           <View className='recomd-title'>为你推荐</View>
           <View className='recomd-items'>
-            <RecomdItems />
+            <RecomdItems className='recomd-items' />
           </View>
         </View>
         <View className='flex-options'>
-          <AtTabBar className='flex-options__l'
-            tabList={[
-              { title: '喜欢', image: Likes },
-              { title: '衣橱', image: Yichu, text: '0' },
-            ]}
-            color='#161616'
-            onClick={this.handleClick.bind(this)}
-            current={this.state.current}
-          />
+          <View className='flex-options__l'>
+            <AtTabBar
+              tabList={[
+                { title: '喜欢', image: Likes },
+                { title: '衣橱', image: Yichu, text: '0' },
+              ]}
+              color='#161616'
+              onClick={this.handleClick.bind(this)}
+              current={this.state.current}
+            />
+          </View>
+
           <View className='flex-options__r'>
             <Text className='options-button'>加入衣橱</Text>
           </View>

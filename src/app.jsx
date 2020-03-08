@@ -30,11 +30,11 @@ class App extends Component {
 
   config = {
     pages: [
+      'pages/mine/index',
+      'pages/wardrobe/index',
       'pages/choose_clothes/index',
       'pages/goods/index',
       'pages/detail/index',
-      'pages/wardrobe/index',
-      'pages/mine/index'
     ],
     window: {
       backgroundTextStyle: 'light',

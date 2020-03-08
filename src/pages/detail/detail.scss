@@ -31,6 +31,7 @@
 .detail-info {
   padding: 24px;
   font-size: 32px;
+  background-color: #efefef;
 
   .info-title {
     font-size: 40px;
@@ -43,12 +44,17 @@
 }
 
 .recommend {
-  padding: 30px 24px;
   background-color: #fff;
   margin-bottom: 60px;
 }
 
-.recomd-title {}
+.recomd-items {
+  height: auto;
+}
+
+.recomd-title {
+  padding: 30px 24px;
+}
 
 .flex-options {
   width: 100%;
@@ -73,7 +79,7 @@
     color: #fff;
 
     .options-button {
-      line-height: 60px;
+      line-height: 120px;
     }
   }
 }

@@ -1,6 +1,6 @@
 const isH5 = process.env.CLIENT_ENV === 'h5'
-const HOST = '"https://miniapp.you.163.com"'
-const HOST_M = '"https://m.you.163.com"'
+const HOST = '""'
+const HOST_M = '""'
 
 module.exports = {
   env: {

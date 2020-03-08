@@ -1,0 +1,78 @@
+.wardrobe {
+  background-color: #efefef;
+  height: 1366px;
+
+  .empty {
+    margin-top: 200px;
+    text-align: center;
+
+    .empty-img {
+      width: 445px;
+      height: 455px;
+    }
+
+    .add-btn {
+      margin-top: 50px;
+      width: 248px;
+      height: 88px;
+      color: #fff;
+      background-color: #333333;
+      border-radius: 1px;
+    }
+  }
+
+  .wardrobe-body {
+    position: relative;
+    top: 30px;
+  }
+
+  .wardrobe-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 20px;
+
+    .wardrobe-item__hd {
+      width: 10%;
+      margin: 0 auto;
+      align-self: center;
+
+    }
+
+    .wardrobe-item__bd {
+      width: 25%;
+
+      .goods-img {
+        width: 140px;
+        height: 180px;
+      }
+    }
+
+    .wardrobe-item__ft {
+      width: 60%;
+    }
+  }
+}
+
+
+.checkbox {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+
+  .checkbox-body {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/images/icon/check.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .active {
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/images/icon/checked.png');
+  }
+}

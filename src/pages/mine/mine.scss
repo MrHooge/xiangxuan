@@ -1,0 +1,57 @@
+.index {
+  height: 1366px;
+  background-color: #efefef;
+}
+
+.mine {
+
+
+  .mine-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 260px;
+    background-color: #FB4C51;
+
+    .main-avatar {
+      margin-left: 60px;
+
+      .avatar-img {
+        width: 120px;
+        height: 120px;
+      }
+    }
+
+    .mine-username {
+      .username {
+        margin-left: 30px;
+        color: white;
+      }
+    }
+  }
+
+  .live-plan {
+    // width: 90%;
+    height: 178px;
+    margin: -50px 30px 0;
+    position: relative;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+
+    .live-font-h3 {
+      font-size: 34px;
+    }
+
+    .live-font-red {
+      color: #FB4C51;
+      font-size: 28px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.mine-list {
+  margin-top: 15px;
+}
